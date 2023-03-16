@@ -1,1 +1,13 @@
-sad
+name: "Test"
+on:
+  push: 
+    branches: [ main ]
+jobs:
+  test:
+    name: getpreview
+    runs-on: self-hosted
+    steps:
+      - name: test
+        id: test-echo
+        run: | 
+          echo "hello"
